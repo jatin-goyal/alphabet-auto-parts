@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 async function getData() {
-  const query = `*[_type == "product"][0...4]  | order(_createdAt desc) {
+  const query = `*[_type == "product"][0...4]  | order(_createdAt asc) {
         _id,
         name,
         price,
@@ -26,7 +26,7 @@ export default async function Newest() {
   // console.log(data);
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Our Newest products
@@ -40,10 +40,10 @@ export default async function Newest() {
           </Link>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data &&
             data.map((product) => {
-              console.log(product);
+              // console.log(product);
               return (
                 <div key={product._id} className="group relative">
                   <Link href={`/product/${product.slug}`}>

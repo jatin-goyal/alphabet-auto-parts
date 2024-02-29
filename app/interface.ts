@@ -15,6 +15,7 @@ export interface fullProduct {
   images: any;
   price: number;
   cut_price: number;
+  min_order: number;
   slug: string;
   description: string;
   categoryName: string;

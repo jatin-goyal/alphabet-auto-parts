@@ -38,6 +38,11 @@ export default {
       type: 'number',
     },
     {
+      name: 'min_order',
+      title: 'Minimum Order',
+      type: 'number',
+    },
+    {
       name: 'price_id',
       title: 'Stripe Price ID',
       type: 'string',
