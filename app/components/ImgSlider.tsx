@@ -20,7 +20,6 @@ export default function ImgSlider() {
           loop={true}
           pagination={{ type: "fraction", clickable: false }}
           modules={[Autoplay, Navigation, Pagination]}
-          onSwiper={(swiper) => console.log(swiper)}
           className="h-30 md:h-60 lg:h-96 w-full rounded-lg"
           autoplay={{
             delay: 2500,
