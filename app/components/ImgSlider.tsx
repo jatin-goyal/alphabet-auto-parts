@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 export default function ImgSlider() {
   return (
-    <section className="py-6 z-10">
+    <section className="pt-6 z-10">
       <div className="container">
         <Swiper
           navigation
