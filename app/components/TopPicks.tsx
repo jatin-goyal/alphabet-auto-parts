@@ -39,7 +39,7 @@ export default async function Newest() {
   // console.log(data);
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 mt-2 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Top Picks
@@ -54,7 +54,7 @@ export default async function Newest() {
         </div>
         <div className="mt-6 flex justify-center ">
           <Carousel
-            className="w-5/6"
+            className="w-5/6 md:w-full"
             opts={{
               align: "start",
               loop: true,
