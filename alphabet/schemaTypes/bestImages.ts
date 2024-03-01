@@ -1,7 +1,7 @@
 export default {
-  name: 'product',
+  name: 'bestImages',
   type: 'document',
-  title: 'Product',
+  title: 'Best Images',
   fields: [
     {
       name: 'name',
@@ -42,7 +42,6 @@ export default {
       title: 'Minimum Order',
       type: 'number',
     },
-
     {
       name: 'category',
       title: 'Product Category',
