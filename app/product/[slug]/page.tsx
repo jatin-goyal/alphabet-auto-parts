@@ -79,7 +79,7 @@ export default async function ProductPage({
 
             <div className="mb-4">
               <span className="mb-0.5 text-red-500 line-through">
-                Rs.{data.price + 30}
+                Rs.{data.price + 50}
               </span>{" "}
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
@@ -131,6 +131,7 @@ export default async function ProductPage({
           </div>
         </div>
       </div>
+      <Newest />
     </div>
   );
 }

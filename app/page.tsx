@@ -9,6 +9,8 @@ export default function Home() {
       <Hero />
       <Badge />
       <Newest />
+      <Newest />
+      <Newest />
     </div>
   );
 }
