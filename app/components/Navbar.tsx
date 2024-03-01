@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between lg:justify-center  mx-auto md:max-w-2xl lg:max-w-7xl px-3 py-1 sm:w-full w-full">
         <Link href="/">
-          <h1 className="text-xl md:text-4xl font-bold philosopher-bold mt-2">
+          <h1 className="text-xl md:text-5xl font-bold philosopher-bold mt-2">
             ALPHABET VISOR GLASS
           </h1>
         </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
       {showNav && (
         <nav className="bg-black p-5 gap-20 lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center md:hidden z-50">
           {Links.map((link, idx) => (
-            <div key={idx} className="my-3">
+            <div key={idx} className="my-3" onClick={() => setShowNav(false)}>
               {pathname === link.href ? (
                 <Link
                   className="text-2xl font-bold text-primary my-4 py-2"

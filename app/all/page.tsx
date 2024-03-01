@@ -4,7 +4,7 @@ import { client } from "../lib/sanity";
 import Image from "next/image";
 
 async function getData(cateogry: string) {
-  const query = `*[_type == "product" && category->name == "${cateogry}"]  | order(_createdAt asc) {
+  const query = `*[_type == "product"]{
         _id,
           "imageURL": images[0].asset->url,
           price,
@@ -31,9 +31,8 @@ export default async function CategoryPage({
     <div className="bg-white pt-8">
       <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
-          <h2 className="text-xl md:text-3xl font-bold tracking-tight text-gray-900">
-            Best quality visor glasses for{" "}
-            <span className="font-bold text-gray-900">{params.category}</span>
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900 mt-2 mb-2">
+            Best Quality <span className="text-primary">Visor Glass</span>{" "}
           </h2>
         </div>
 
