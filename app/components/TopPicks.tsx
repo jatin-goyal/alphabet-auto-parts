@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 async function getData() {
   const query = `*[_type == "bestImages"] {
@@ -31,14 +32,14 @@ async function getData() {
   return data;
 }
 
-export default async function Newest() {
+export default async function TopPicks() {
   const data: simplifiedProduct[] = await getData();
   // const plugin = React.useRef(
   //   Autoplay({ delay: 2000, stopOnInteraction: true })
   // );
   // console.log(data);
   return (
-    <div className="bg-white">
+    <div className=" mb-4">
       <div className="mx-auto max-w-2xl px-4 mt-2 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
@@ -64,9 +65,12 @@ export default async function Newest() {
               {data &&
                 data.map((product) => {
                   return (
-                    <CarouselItem className="pl-1 px-1 mr-1 md:basis-1/2 lg:basis-1/4">
+                    <CarouselItem
+                      className="bg-white border-rounded pl-4 px-1 mr-4 md:basis-1/2 lg:basis-1/4"
+                      style={{ height: 375 }}
+                    >
                       <Link href={`/product/${product.slug}`}>
-                        <div className="p-1 flex justify-center">
+                        <div className="p-1 flex justify-center ">
                           <Image
                             src={product.imageURL}
                             alt={"check"}
@@ -74,7 +78,7 @@ export default async function Newest() {
                             height={300}
                           />
                         </div>
-                        <div className="mt-4 flex justify-between">
+                        <div className="mt-4 flex justify-between px-2">
                           <div>
                             <h3 className="text-sm text-gray-700">
                               {product.name}
@@ -86,6 +90,9 @@ export default async function Newest() {
                           <p className="text-sm font-medium text-gray-900">
                             Rs.{product.price}
                           </p>
+                        </div>
+                        <div className="w-full p-2 pt-3">
+                          <Button className="w-full p-2">Know more</Button>
                         </div>
                       </Link>
                     </CarouselItem>

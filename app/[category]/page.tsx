@@ -28,7 +28,7 @@ export default async function CategoryPage({
   const data: simplifiedProduct[] = await getData(params.category);
 
   return (
-    <div className="bg-white pt-8">
+    <div className="bg-white pt-8" style={{ minHeight: 530 }}>
       <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
           <h2 className="text-xl md:text-3xl font-bold tracking-tight text-gray-900">

@@ -28,9 +28,11 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between lg:justify-center  mx-auto md:max-w-2xl lg:max-w-7xl px-3 py-1 sm:w-full w-full">
         <Link href="/">
-          <h1 className="text-xl md:text-5xl font-bold philosopher-bold mt-2">
-            ALPHABET VISOR GLASS
-          </h1>
+          <div>
+            <h1 className="text-xl md:text-5xl font-bold  md:my-1 ">
+              ALPHABET VISOR GLASS
+            </h1>
+          </div>
         </Link>
         <div className="flex divide-x border-r sm:border-l lg:hidden">
           <Button
@@ -45,12 +47,12 @@ export default function Navbar() {
         </div>
       </div>
       {showNav && (
-        <nav className="bg-black p-5 gap-20 lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center md:hidden z-50">
+        <nav className="bg-black p-5 gap-2 flex flex-col lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center md:hidden z-50">
           {Links.map((link, idx) => (
             <div key={idx} className="my-3" onClick={() => setShowNav(false)}>
               {pathname === link.href ? (
                 <Link
-                  className="text-2xl font-bold text-primary my-4 py-2"
+                  className="text-2xl font-bold text-primary my-1 py-2"
                   href={link.href}
                 >
                   {link.name}
@@ -58,7 +60,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href}
-                  className="text-xl font-semibold text-white transition duration-100 hover:text-primary my-4 py-4"
+                  className="text-xl font-semibold text-white transition duration-100 hover:text-primary my-1 py-2"
                 >
                   {link.name}
                 </Link>
@@ -66,10 +68,19 @@ export default function Navbar() {
             </div>
           ))}
           <Link
-            className="text-2xl font-bold text-white transition duration-100 hover:text-primary my-4 py-2"
-            href={"/"}
+            className="text-2xl font-bold text-white transition duration-100 hover:text-primary my-1 py-2"
+            href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
+            target="_blank"
+            onClick={() => setShowNav(false)}
           >
             Contact Us
+          </Link>
+          <Link
+            className="text-2xl font-bold text-white transition duration-100 hover:text-primary my-1 py-2"
+            href={"/aboutUs"}
+            onClick={() => setShowNav(false)}
+          >
+            About Us
           </Link>
         </nav>
       )}
@@ -93,9 +104,13 @@ export default function Navbar() {
         ))}
         <Link
           className="text-lg text-white font-bold dark bg-secondary p-2 rounded transition duration-200 hover:bg-primary"
-          href={"/"}
+          href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
+          target="_blank"
         >
           Contact Us
+        </Link>
+        <Link className="text-xl font-bold " href={"/aboutUs"}>
+          About Us
         </Link>
       </nav>
     </header>

@@ -1,9 +1,11 @@
 import ImageGallery from "@/app/components/ImageGallery";
 import Newest from "@/app/components/Newest";
+import TopPicks from "@/app/components/TopPicks";
 import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
 import { Box, PackageSearch, Star, Truck } from "lucide-react";
+import Link from "next/link";
 
 async function getData(slug: string) {
   const query = `*[_type == "product" && slug.current == "${slug}"][0] {
@@ -105,10 +107,22 @@ export default async function ProductPage({
             </div>
 
             <div className="flex gap-2.5">
-              <Button>Get Latest Price</Button>
-              <Button className="bg-secondary text-black">
-                Yes! I am Interested
-              </Button>
+              {/* https://api.whatsapp.com/send/?phone=917217683367&text&type=phone_number&app_absent=0 */}
+
+              <Link
+                href="https://api.whatsapp.com/send/?phone=917217683367&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                <Button>Get Latest Price Now</Button>
+              </Link>
+              <Link
+                href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
+                target="_blank"
+              >
+                <Button className="bg-secondary text-black">
+                  Yes! I am Interested
+                </Button>
+              </Link>
             </div>
 
             {data.description ? (
@@ -131,7 +145,7 @@ export default async function ProductPage({
           </div>
         </div>
       </div>
-      <Newest />
+      <TopPicks />
     </div>
   );
 }

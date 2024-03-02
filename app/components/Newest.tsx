@@ -3,6 +3,7 @@ import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 async function getData() {
   const query = `*[_type == "product"][0...4] {
@@ -26,7 +27,7 @@ export default async function Newest() {
   // console.log(data);
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 pt-2 sm:px-6  lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pt-2 sm:px-6  lg:max-w-7xl lg:px-8 mb-3 mt-4 pt-4">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Our Newest products
@@ -57,7 +58,7 @@ export default async function Newest() {
                       />
                     </div>
 
-                    <div className="mt-4 flex justify-between">
+                    <div className="mt-4 flex justify-between px-2">
                       <div>
                         <h3 className="text-sm text-gray-700">
                           {product.name}
@@ -69,6 +70,9 @@ export default async function Newest() {
                       <p className="text-sm font-medium text-gray-900">
                         Rs.{product.price}
                       </p>
+                    </div>
+                    <div className="w-full p-2 pt-3">
+                      <Button className="w-full p-2">Know more</Button>
                     </div>
                   </Link>
                 </div>
