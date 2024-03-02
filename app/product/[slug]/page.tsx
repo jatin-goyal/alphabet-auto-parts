@@ -4,8 +4,9 @@ import TopPicks from "@/app/components/TopPicks";
 import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
-import { Box, PackageSearch, Star, Truck } from "lucide-react";
+import { Box, MessageCircle, PackageSearch, Star, Truck } from "lucide-react";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 async function getData(slug: string) {
   const query = `*[_type == "product" && slug.current == "${slug}"][0] {
@@ -110,17 +111,19 @@ export default async function ProductPage({
               {/* https://api.whatsapp.com/send/?phone=917217683367&text&type=phone_number&app_absent=0 */}
 
               <Link
-                href="https://api.whatsapp.com/send/?phone=917217683367&text&type=phone_number&app_absent=0"
-                target="_blank"
-              >
-                <Button>Get Latest Price Now</Button>
-              </Link>
-              <Link
                 href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
                 target="_blank"
               >
-                <Button className="bg-secondary text-black">
+                <Button className="bg-primary text-white">
                   Yes! I am Interested
+                </Button>
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send/?phone=917217683367&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                <Button className="bg-secondary text-black hover:text-white">
+                  <FaWhatsapp className="mr-1 font-bold" /> Get Latest Price Now
                 </Button>
               </Link>
             </div>

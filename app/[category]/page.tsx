@@ -2,6 +2,7 @@ import Link from "next/link";
 import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 async function getData(cateogry: string) {
   const query = `*[_type == "product" && category->name == "${cateogry}"]  | order(_createdAt asc) {
@@ -52,8 +53,7 @@ export default async function CategoryPage({
                       height={300}
                     />
                   </div>
-
-                  <div className="mt-4 flex justify-between">
+                  <div className="mt-4 flex justify-between px-2">
                     <div>
                       <h3 className="text-sm text-gray-700">{product.name}</h3>
                       <p className="mt-1 text-sm text-gray-500">
@@ -63,6 +63,9 @@ export default async function CategoryPage({
                     <p className="text-sm font-medium text-gray-900">
                       Rs.{product.price}/pc
                     </p>
+                  </div>
+                  <div className="w-full p-2 pt-3">
+                    <Button className="w-full p-2">Know more</Button>
                   </div>
                 </div>
               </Link>
