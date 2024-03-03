@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function AboutPage() {
   return (
@@ -107,19 +108,23 @@ export default function AboutPage() {
                 customers, fostering a positive shopping experience from start
                 to finish.
               </p>
-              <p className=" w-5/6 overflow-auto text-justify mt-4">
+              <p className="w-5/6 overflow-auto text-justify mt-4">
                 <span className="text-xl font-bold">Affordable Luxury :</span>{" "}
                 We understand the importance of balancing quality with
-                affordability. That's why we strive to offer you a curated
-                selection of premium products at prices that won't break the
-                bank. Enjoy the luxury of choice without compromising your
+                affordability. That&apos;s why we strive to offer you a curated
+                selection of premium products at prices that won&apos;t break
+                the bank. Enjoy the luxury of choice without compromising your
                 budget. With us, you get the best of both worlds, exceptional
                 products and unbeatable value.
               </p>
             </div>
           </div>
         </div>
-        <script src="https://static.elfsight.com/platform/platform.js"></script>
+        <Script
+          src="https://static.elfsight.com/platform/platform.js"
+          strategy="lazyOnload"
+        />
+
         <div
           className="elfsight-app-bb3c7b49-0b37-415d-ad76-ff14048e2c08"
           data-elfsight-app-lazy
