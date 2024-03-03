@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
       </div>
       {showNav && (
-        <nav className="bg-black p-5 gap-2 flex flex-col lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center md:hidden z-50">
+        <nav className="bg-black p-5 gap-1 flex flex-col lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center md:hidden z-50">
           {Links.map((link, idx) => (
             <div key={idx} className="my-3" onClick={() => setShowNav(false)}>
               {pathname === link.href ? (

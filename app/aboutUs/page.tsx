@@ -8,8 +8,11 @@ export default function AboutPage() {
       <div>
         <div className="min-h-96 flex flex-col md:flex-row mb-4">
           <div
-            className=" min-h-96 p-10"
-            style={{ maxWidth: 600, maxHeight: 600 }}
+            className=" min-h-96 p-10 md:sticky md:top-32"
+            style={{
+              maxWidth: 600,
+              maxHeight: 600,
+            }}
           >
             <Image
               src="/logo.png"
@@ -18,10 +21,7 @@ export default function AboutPage() {
               height={1000}
             />
           </div>
-          <div
-            className=" min-h-96 text-center md:w-3/5 max-w-50 mb-4 md:py-10 overflow-auto"
-            style={{ height: "68vh" }}
-          >
+          <div className=" min-h-96 text-center md:w-3/5 max-w-50 mb-4 md:py-10 overflow-auto">
             <div className="text-center">
               <h1 className="text-2xl font-bold px-10">Alphabet Visor Glass</h1>
             </div>
@@ -123,13 +123,15 @@ export default function AboutPage() {
         <Script
           src="https://static.elfsight.com/platform/platform.js"
           strategy="lazyOnload"
+          className=""
         />
 
         <div
           className="elfsight-app-bb3c7b49-0b37-415d-ad76-ff14048e2c08"
           data-elfsight-app-lazy
+          style={{ zIndex: -1 }}
         ></div>
-        <div style={{ border: 0, alignItems: "center", width: "110%" }}>
+        <div style={{ border: 0, alignItems: "center", width: "100%" }}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2557.6441050025087!2d77.04517468376883!3d28.786122113265783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390da906113b7c61%3A0x3afd31d6187fea38!2sAlphabet%20Visor%20Glass!5e0!3m2!1sen!2sin!4v1707767629377!5m2!1sen!2sin"
             width="100%"
