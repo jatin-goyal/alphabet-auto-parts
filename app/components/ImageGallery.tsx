@@ -26,7 +26,7 @@ export default function ImageGallery({ images }: iAppProps) {
               src={urlFor(image).url()}
               width={200}
               height={200}
-              alt="photo"
+              alt="Alphabet visor glass, alphhabet visor glass, 2-wheeler, two-wheeler, 2 wheeler, two wheeler, visor, visor glass, windshield, wind sheild, fairing, fender, auto part, plastic parts, manufactururer, bawana, delhi, india, Alphabet visor glass hero,hero visor glass, honda visor glass, honda, tvs visor glass, tvs, yamaha visor glass, yamaha, bajaj visor glass, bajaj, mahindra visor glass, mahindra, suzuki visor glass, Suzuki, ktm, bawana, delhi, mumbai, pune, panjab, jharkhand, up, kanpur, lucknow"
               className="h-20  w-20 lg:h-full lg:w-full object-cover object-center cursor-pointer "
               onClick={() => handleSmallImageClick(image)}
             />
@@ -37,7 +37,7 @@ export default function ImageGallery({ images }: iAppProps) {
       <div className="relative overflow-hidden rounded-lg bg-gray-100 lg:col-span-4 h-full lg:h-4/5 hover:origin-top hover:scale-150  transition duration-150 ease-out hover:ease-in-out duration-300">
         <Image
           src={urlFor(bigImage).url()}
-          alt="Photo"
+          alt="Alphabet visor glass, alphhabet visor glass, 2-wheeler, two-wheeler, 2 wheeler, two wheeler, visor, visor glass, windshield, wind sheild, fairing, fender, auto part, plastic parts, manufactururer, bawana, delhi, india, Alphabet visor glass hero,hero visor glass, honda visor glass, honda, tvs visor glass, tvs, yamaha visor glass, yamaha, bajaj visor glass, bajaj, mahindra visor glass, mahindra, suzuki visor glass, Suzuki, ktm, bawana, delhi, mumbai, pune, panjab, jharkhand, up, kanpur, lucknow"
           width={300}
           height={300}
           className="h-90 w-full object-cover object-center"
