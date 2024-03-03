@@ -41,7 +41,7 @@ export default async function CategoryPage({
           {data.map((product) => {
             return (
               <Link href={`/product/${product.slug}`} key={product._id}>
-                <div className="group relative hover:scale-110 transition duration-150 ease-out hover:ease-in">
+                <div className="group relative md:hover:scale-110 transition duration-150 ease-out hover:ease-in">
                   <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}
