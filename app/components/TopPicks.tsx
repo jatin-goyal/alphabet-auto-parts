@@ -68,6 +68,7 @@ export default async function TopPicks() {
                     <CarouselItem
                       className="bg-white border-rounded pl-4 px-1 mr-4 md:basis-1/2 lg:basis-1/4  "
                       style={{ height: 375 }}
+                      key={product.slug}
                     >
                       <div className="hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
                         <Link href={`/product/${product.slug}`}>

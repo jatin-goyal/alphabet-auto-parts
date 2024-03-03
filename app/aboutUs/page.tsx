@@ -4,9 +4,6 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <>
-      <head>
-        <script src="https://static.elfsight.com/platform/platform.js"></script>
-      </head>
       <div>
         <div className="min-h-96 flex flex-col md:flex-row mb-4">
           <div
@@ -116,13 +113,13 @@ export default function AboutPage() {
                 affordability. That's why we strive to offer you a curated
                 selection of premium products at prices that won't break the
                 bank. Enjoy the luxury of choice without compromising your
-                budget. With us, you get the best of both worlds – exceptional
+                budget. With us, you get the best of both worlds, exceptional
                 products and unbeatable value.
               </p>
             </div>
           </div>
         </div>
-
+        <script src="https://static.elfsight.com/platform/platform.js"></script>
         <div
           className="elfsight-app-bb3c7b49-0b37-415d-ad76-ff14048e2c08"
           data-elfsight-app-lazy

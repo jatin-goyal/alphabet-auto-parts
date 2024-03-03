@@ -42,7 +42,7 @@ export default async function CategoryPage({
           {data.map((product) => {
             console.log(product.imageURL, "check");
             return (
-              <Link href={`/product/${product.slug}`}>
+              <Link href={`/product/${product.slug}`} key={product.slug}>
                 <div
                   key={product._id}
                   className="group relative hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300"
