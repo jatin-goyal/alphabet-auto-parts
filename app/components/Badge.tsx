@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
@@ -12,81 +13,83 @@ export default function Badge() {
       <Container>
         <Link href={"/Hero"}>
           <Wrap>
-            <img
-              src={
-                "https://logos-world.net/wp-content/uploads/2020/12/Hero-Logo.png"
-              }
+            <Image
+              src={"/hero-logo.png"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/Honda"}>
           {" "}
           <Wrap>
-            <img
-              src={
-                "https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo.png"
-              }
+            <Image
+              src={"/honda-logo.png"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/TVS"}>
           <Wrap>
-            <img
-              src={
-                "https://static.vecteezy.com/system/resources/previews/020/336/393/original/tvs-logo-tvs-icon-transparent-png-free-vector.jpg"
-              }
+            <Image
+              src={"/tvs.jpg"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/Yamaha"}>
           {" "}
           <Wrap>
-            <img
-              src={
-                "https://logos-world.net/wp-content/uploads/2020/10/Yamaha-Logo.png"
-              }
+            <Image
+              src={"/yamaha.png"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/Bajaj"}>
           <Wrap>
-            <img
-              src={
-                "https://1000logos.net/wp-content/uploads/2020/06/Bajaj-Logo.png"
-              }
+            <Image
+              src={"/bajaj-logo.jpg"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/Mahindra"}>
           <Wrap>
-            <img
-              src={
-                "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/cms/uploads/kininb6m4imxda6ppnxu"
-              }
+            <Image
+              src={"/mahindra.jpeg"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/Suzuki"}>
           <Wrap>
-            <img
-              src={"https://www.carlogos.org/logo/Suzuki-logo-1920x1080.png"}
+            <Image
+              src={"/suzuki.jpeg"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
         <Link href={"/KTM"}>
           <Wrap>
-            <img
-              src={
-                "https://static.vecteezy.com/system/resources/previews/020/190/489/original/ktm-logo-ktm-icon-free-free-vector.jpg"
-              }
+            <Image
+              src={"/ktm.jpeg"}
               alt={"image.alt"}
+              width={100}
+              height={100}
             />
           </Wrap>
         </Link>
