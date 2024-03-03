@@ -7,7 +7,7 @@ import styled from "styled-components";
 export default function Badge() {
   return (
     <div className="z-10">
-      <h1 className="text-3xl font-bold items-center text-center pt-12">
+      <h1 className="text-2xl px-4 md:text-3xl font-bold items-center text-center pt-6 md:pt-10">
         Our visor glasses are suitable for these brands{" "}
       </h1>
       <Container>

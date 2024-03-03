@@ -12,11 +12,10 @@ export default function ImgSlider() {
     <section className="pt-6 z-10">
       <div className="container">
         <Swiper
-          navigation
           loop={true}
           pagination={{ type: "fraction", clickable: false }}
           modules={[Autoplay, Navigation, Pagination]}
-          className="h-30 md:h-60 lg:h-96 w-full rounded-lg"
+          className="h-30 md:h-60 lg:h-96 w-full rounded-2xl"
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
