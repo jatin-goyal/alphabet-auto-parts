@@ -2,6 +2,7 @@ import Link from "next/link";
 import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 async function getData(cateogry: string) {
   const query = `*[_type == "product"]{
@@ -41,7 +42,10 @@ export default async function CategoryPage({
             console.log(product.imageURL, "check");
             return (
               <Link href={`/product/${product.slug}`}>
-                <div key={product._id} className="group relative">
+                <div
+                  key={product._id}
+                  className="group relative hover:scale-110 transition duration-150 ease-out hover:ease-in"
+                >
                   <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}
@@ -52,7 +56,7 @@ export default async function CategoryPage({
                     />
                   </div>
 
-                  <div className="mt-4 flex justify-between">
+                  <div className="mt-4 flex justify-between px-2">
                     <div>
                       <h3 className="text-sm text-gray-700">{product.name}</h3>
                       <p className="mt-1 text-sm text-gray-500">
@@ -62,6 +66,9 @@ export default async function CategoryPage({
                     <p className="text-sm font-medium text-gray-900">
                       Rs.{product.price}/pc
                     </p>
+                  </div>
+                  <div className="w-full p-2 pt-3">
+                    <Button className="w-full p-2">Know more</Button>
                   </div>
                 </div>
               </Link>

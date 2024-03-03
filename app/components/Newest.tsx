@@ -46,7 +46,10 @@ export default async function Newest() {
             data.map((product) => {
               // console.log(product);
               return (
-                <div key={product._id} className="group relative">
+                <div
+                  key={product._id}
+                  className="group relative hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300"
+                >
                   <Link href={`/product/${product.slug}`}>
                     <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-60 sm:h-40">
                       <Image

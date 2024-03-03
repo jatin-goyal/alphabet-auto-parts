@@ -66,35 +66,37 @@ export default async function TopPicks() {
                 data.map((product) => {
                   return (
                     <CarouselItem
-                      className="bg-white border-rounded pl-4 px-1 mr-4 md:basis-1/2 lg:basis-1/4"
+                      className="bg-white border-rounded pl-4 px-1 mr-4 md:basis-1/2 lg:basis-1/4  "
                       style={{ height: 375 }}
                     >
-                      <Link href={`/product/${product.slug}`}>
-                        <div className="p-1 flex justify-center ">
-                          <Image
-                            src={product.imageURL}
-                            alt={"check"}
-                            width={300}
-                            height={300}
-                          />
-                        </div>
-                        <div className="mt-4 flex justify-between px-2">
-                          <div>
-                            <h3 className="text-sm text-gray-700">
-                              {product.name}
-                            </h3>
-                            <p className="mt-1 text-sm text-gray-500">
-                              {product.categoryName}
+                      <div className="hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
+                        <Link href={`/product/${product.slug}`}>
+                          <div className="p-1 flex justify-center ">
+                            <Image
+                              src={product.imageURL}
+                              alt={"check"}
+                              width={300}
+                              height={300}
+                            />
+                          </div>
+                          <div className="mt-4 flex justify-between px-2">
+                            <div>
+                              <h3 className="text-sm text-gray-700">
+                                {product.name}
+                              </h3>
+                              <p className="mt-1 text-sm text-gray-500">
+                                {product.categoryName}
+                              </p>
+                            </div>
+                            <p className="text-sm font-medium text-gray-900">
+                              Rs.{product.price}
                             </p>
                           </div>
-                          <p className="text-sm font-medium text-gray-900">
-                            Rs.{product.price}
-                          </p>
-                        </div>
-                        <div className="w-full p-2 pt-3">
-                          <Button className="w-full p-2">Know more</Button>
-                        </div>
-                      </Link>
+                          <div className="w-full p-2 pt-3">
+                            <Button className="w-full p-2">Know more</Button>
+                          </div>
+                        </Link>
+                      </div>
                     </CarouselItem>
                   );
                 })}

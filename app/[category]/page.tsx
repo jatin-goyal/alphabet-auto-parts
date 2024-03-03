@@ -43,7 +43,10 @@ export default async function CategoryPage({
             console.log(product.imageURL, "check");
             return (
               <Link href={`/product/${product.slug}`}>
-                <div key={product._id} className="group relative">
+                <div
+                  key={product._id}
+                  className="group relative hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300"
+                >
                   <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}

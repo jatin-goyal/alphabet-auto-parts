@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export default function Badge() {
   return (
-    <div>
+    <div className="z-10">
       <h1 className="text-3xl font-bold items-center text-center pt-12">
         Our visor glasses are suitable for these brands{" "}
       </h1>
@@ -130,7 +130,7 @@ const Wrap = styled.div`
     height: 100%;
     transition: opacity 500ms ease-in-out 0s;
     width: 100%;
-    z-index: 1;
+
     top: 0;
   }
 
