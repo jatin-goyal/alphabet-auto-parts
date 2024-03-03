@@ -12,7 +12,7 @@ export default function Badge() {
       </h1>
       <Container>
         <Link href={"/Hero"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/hero.png"}
               alt={"image.alt"}
@@ -23,7 +23,7 @@ export default function Badge() {
         </Link>
         <Link href={"/Honda"}>
           {" "}
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/honda.png"}
               alt={"image.alt"}
@@ -33,7 +33,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/TVS"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/tvs.jpg"}
               alt={"image.alt"}
@@ -44,7 +44,7 @@ export default function Badge() {
         </Link>
         <Link href={"/Yamaha"}>
           {" "}
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/yamaha.png"}
               alt={"image.alt"}
@@ -54,7 +54,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Bajaj"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/bajaj.jpeg"}
               alt={"image.alt"}
@@ -64,7 +64,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Mahindra"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/mahindra.jpeg"}
               alt={"image.alt"}
@@ -74,7 +74,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Suzuki"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/suzuki.jpeg"}
               alt={"image.alt"}
@@ -84,7 +84,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/KTM"}>
-          <Wrap>
+          <Wrap className="md:hover:scale-110">
             <Image
               src={"/ktm.jpeg"}
               alt={"image.alt"}
@@ -150,7 +150,7 @@ const Wrap = styled.div`
     box-shadow: rgb(0 0 0 / 70%) 0px 30px 30px -10px,
       rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     border: 3px solid rgba(249, 249, 249, 0.8);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 
     video {
       opacity: 1;

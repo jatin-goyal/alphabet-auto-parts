@@ -42,7 +42,7 @@ export default async function CategoryPage({
             return (
               <Link href={`/product/${product.slug}`} key={product._id}>
                 <div className="group relative md:hover:scale-110 transition duration-150 ease-out hover:ease-in">
-                  <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-40 lg:h-60">
+                  <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 md:group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}
                       alt="Alphabet visor glass, alphhabet visor glass, 2-wheeler, two-wheeler, 2 wheeler, two wheeler, visor, visor glass, windshield, wind sheild, fairing, fender, auto part, plastic parts, manufactururer, bawana, delhi, india, Alphabet visor glass hero,hero visor glass, honda visor glass, honda, tvs visor glass, tvs, yamaha visor glass, yamaha, bajaj visor glass, bajaj, mahindra visor glass, mahindra, suzuki visor glass, Suzuki, ktm, bawana, delhi, mumbai, pune, panjab, jharkhand, up, kanpur, lucknow"
