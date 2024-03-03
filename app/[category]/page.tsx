@@ -40,13 +40,9 @@ export default async function CategoryPage({
 
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((product) => {
-            console.log(product.imageURL, "check");
             return (
-              <Link href={`/product/${product.slug}`} key={product.slug}>
-                <div
-                  key={product._id}
-                  className="group relative hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300"
-                >
+              <Link href={`/product/${product.slug}`} key={product._id}>
+                <div className="group relative hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
                   <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}

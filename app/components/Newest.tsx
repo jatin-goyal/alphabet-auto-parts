@@ -24,7 +24,6 @@ async function getData() {
 
 export default async function Newest() {
   const data: simplifiedProduct[] = await getData();
-  // console.log(data);
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 pt-2 sm:px-6  lg:max-w-7xl lg:px-8 mb-3 mt-4 pt-4">
@@ -44,7 +43,6 @@ export default async function Newest() {
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data &&
             data.map((product) => {
-              // console.log(product);
               return (
                 <div
                   key={product._id}

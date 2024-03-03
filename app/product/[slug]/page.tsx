@@ -50,9 +50,6 @@ export default async function ProductPage({
   params: { slug: string };
 }) {
   const data = await getData(params.slug);
-
-  const sameCategoryData = await getCategoryData(data.categoryName);
-  // console.log(data);
   return (
     <div className="bg-white pt-14">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8 pb-8 border-b">

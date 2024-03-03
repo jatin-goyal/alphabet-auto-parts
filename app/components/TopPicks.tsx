@@ -34,10 +34,6 @@ async function getData() {
 
 export default async function TopPicks() {
   const data: simplifiedProduct[] = await getData();
-  // const plugin = React.useRef(
-  //   Autoplay({ delay: 2000, stopOnInteraction: true })
-  // );
-  // console.log(data);
   return (
     <div className=" mb-4">
       <div className="mx-auto max-w-2xl px-4 mt-2 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
@@ -68,7 +64,7 @@ export default async function TopPicks() {
                     <CarouselItem
                       className="bg-white border-rounded pl-4 px-1 mr-4 md:basis-1/2 lg:basis-1/4  "
                       style={{ height: 375 }}
-                      key={product.slug}
+                      key={product._id}
                     >
                       <div className="hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
                         <Link href={`/product/${product.slug}`}>
