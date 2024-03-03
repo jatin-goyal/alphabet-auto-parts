@@ -21,7 +21,7 @@ export default function AboutPage() {
             />
           </div>
           <div
-            className=" min-h-96 text-center md:w-3/5 max-w-50  md:py-10 overflow-auto"
+            className=" min-h-96 text-center md:w-3/5 max-w-50 mb-4 md:py-10 overflow-auto"
             style={{ height: "68vh" }}
           >
             <div className="text-center">
@@ -85,6 +85,40 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="text-center mt-8 mb-4">
+              <h1 className="text-3xl font-bold px-10 ">Why Us</h1>
+            </div>
+            <div className="flex flex-col justify-center items-center text-lg">
+              <p className=" w-5/6 overflow-auto text-justify mt-4">
+                <span className="text-xl font-bold">Unmatched Quality :</span>{" "}
+                Our commitment to excellence is reflected in the unparalleled
+                quality of our products. Each item in our inventory is carefully
+                selected and crafted to meet the highest standards. We
+                prioritize quality assurance to ensure that every purchase from
+                us exceeds your expectations, providing you with products that
+                stand the test of time.
+              </p>
+              <p className=" w-5/6 overflow-auto text-justify mt-4">
+                <span className="text-xl font-bold">
+                  Customer-Centric Approach :
+                </span>{" "}
+                At Alphabet Visor Glass, we prioritize your satisfaction above
+                all else. Our dedicated customer support team is always ready to
+                assist you, addressing your inquiries, concerns, and feedback
+                promptly. We believe in building lasting relationships with our
+                customers, fostering a positive shopping experience from start
+                to finish.
+              </p>
+              <p className=" w-5/6 overflow-auto text-justify mt-4">
+                <span className="text-xl font-bold">Affordable Luxury :</span>{" "}
+                We understand the importance of balancing quality with
+                affordability. That's why we strive to offer you a curated
+                selection of premium products at prices that won't break the
+                bank. Enjoy the luxury of choice without compromising your
+                budget. With us, you get the best of both worlds – exceptional
+                products and unbeatable value.
+              </p>
             </div>
           </div>
         </div>

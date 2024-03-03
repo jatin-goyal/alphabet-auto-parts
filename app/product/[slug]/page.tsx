@@ -139,14 +139,13 @@ export default async function ProductPage({
                 <span className="font-bold">
                   {data.categoryName} {data.name}
                 </span>{" "}
-                Alphabet Visor Glass, a top-quality upgrade for your{" "}
-                {data.categoryName} {data.name}. Made with strong polycarbonate,
-                this visor is not only durable but also comes from the trusted
-                brand, Alphabet. It's tough, clear, and fits your budget,
-                offering the best value in the market. Improve your
-                two-wheeler's look and shield yourself from wind and debris. The
-                Alphabet Visor Glass is a smart choice for enhancing your ride
-                without breaking the bank.
+                Visor Glass, a top-quality upgrade for your {data.categoryName}{" "}
+                {data.name}. Made with strong polycarbonate, this visor is not
+                only durable but also comes from the trusted brand, Alphabet.
+                It's tough, clear, and fits your budget, offering the best value
+                in the market. Improve your two-wheeler's look and shield
+                yourself from wind and debris. The Alphabet Visor Glass is a
+                smart choice for enhancing your ride without breaking the bank.
               </p>
             )}
           </div>
