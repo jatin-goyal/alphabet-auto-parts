@@ -14,7 +14,7 @@ export default function Badge() {
         <Link href={"/Hero"}>
           <Wrap>
             <Image
-              src={"/hero-logo.png"}
+              src={"/hero.png"}
               alt={"image.alt"}
               width={100}
               height={100}
@@ -25,7 +25,7 @@ export default function Badge() {
           {" "}
           <Wrap>
             <Image
-              src={"/honda-logo.png"}
+              src={"/honda.png"}
               alt={"image.alt"}
               width={100}
               height={100}
@@ -56,7 +56,7 @@ export default function Badge() {
         <Link href={"/Bajaj"}>
           <Wrap>
             <Image
-              src={"/bajaj-logo.jpg"}
+              src={"/bajaj.jpeg"}
               alt={"image.alt"}
               width={100}
               height={100}
