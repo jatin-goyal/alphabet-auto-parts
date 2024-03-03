@@ -43,11 +43,11 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="w-full flex justify-center mt-6">
-              <div className="py-4 px-8 md:px-14 w-full md:w-5/6">
-                <div className="text-center  py-1 text-xl font-bold">
+              <div className="py-4 px-4 md:px-14 w-full md:w-5/6">
+                <div className="text-center  py-1 mb-1 text-xl font-bold">
                   <h1>Company Profile</h1>
                 </div>
-                <div className="flex border text-left ">
+                <div className="flex border text-left text-sm md:text-lg">
                   <div className="w-1/2 border ">
                     <h4 className="border-b p-2">Company CEO</h4>
                     <h4 className="border-b p-2">Nature of Business</h4>
