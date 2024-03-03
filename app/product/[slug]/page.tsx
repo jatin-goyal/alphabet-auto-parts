@@ -134,15 +134,19 @@ export default async function ProductPage({
                 {data.description}
               </p>
             ) : (
-              <p className="mt-6 text-base text-gray-500 tracking-wide w-25">
-                Presenting the best quality visor glass compatible with{" "}
+              <p className="mt-6 text-base text-gray-500 tracking-wide w-25 text-justify">
+                Introducing the{" "}
                 <span className="font-bold">
                   {data.categoryName} {data.name}
-                </span>
-                . It is produced with high quality polycarbonate and a trusted
-                brand, Alphabet. It is durable and price is best in the market.
-                Keywords : Visor glass, Windshield, Fairing, Visor, Two Wheeler,
-                Alphabet Visor Glass.
+                </span>{" "}
+                Alphabet Visor Glass, a top-quality upgrade for your{" "}
+                {data.categoryName} {data.name}. Made with strong polycarbonate,
+                this visor is not only durable but also comes from the trusted
+                brand, Alphabet. It's tough, clear, and fits your budget,
+                offering the best value in the market. Improve your
+                two-wheeler's look and shield yourself from wind and debris. The
+                Alphabet Visor Glass is a smart choice for enhancing your ride
+                without breaking the bank.
               </p>
             )}
           </div>
