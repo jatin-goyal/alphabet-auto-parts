@@ -8,10 +8,10 @@ export default function WhatsappPlugin() {
       target="_blank"
     >
       <div
-        className="fixed bottom-5 left-5 bg-white border-4 border-lime-600 rounded-full p-2 md:hover:scale-110 transition duration-150 ease-out hover:ease-in shadow-2xl"
+        className="fixed bottom-8 left-5 bg-white border-4 border-lime-600 rounded-full p-2 md:hover:scale-110 transition duration-150 ease-out hover:ease-in shadow-2xl"
         style={{
           boxShadow:
-            "rgba(0, 0, 0, 0.7) 0px 30px 30px -10px, rgba(0, 0, 0, 0.53) 0px 16px 10px -10px",
+            "rgba(0, 0, 0, 0.7) 0px 30px 30px -10px, rgba(0, 0, 0, 0.43) 0px 16px 10px -10px",
         }}
       >
         <div className="flex items-center px-2 z-50 font-bold text-lime-800">
