@@ -66,7 +66,7 @@ export default async function TopPicks() {
                       style={{ height: 375 }}
                       key={product._id}
                     >
-                      <div className="md:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
+                      <div className="lg:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
                         <Link href={`/product/${product.slug}`}>
                           <div className="p-1 flex justify-center ">
                             <Image

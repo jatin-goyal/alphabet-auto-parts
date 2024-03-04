@@ -12,7 +12,7 @@ export default function Badge() {
       </h1>
       <Container>
         <Link href={"/Hero"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/hero.png"}
               alt={"image.alt"}
@@ -23,7 +23,7 @@ export default function Badge() {
         </Link>
         <Link href={"/Honda"}>
           {" "}
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/honda.png"}
               alt={"image.alt"}
@@ -33,7 +33,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/TVS"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/tvs.jpg"}
               alt={"image.alt"}
@@ -44,7 +44,7 @@ export default function Badge() {
         </Link>
         <Link href={"/Yamaha"}>
           {" "}
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/yamaha.png"}
               alt={"image.alt"}
@@ -54,7 +54,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Bajaj"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/bajaj.jpeg"}
               alt={"image.alt"}
@@ -64,7 +64,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Mahindra"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/mahindra.jpeg"}
               alt={"image.alt"}
@@ -74,7 +74,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/Suzuki"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/suzuki.jpeg"}
               alt={"image.alt"}
@@ -84,7 +84,7 @@ export default function Badge() {
           </Wrap>
         </Link>
         <Link href={"/KTM"}>
-          <Wrap className="md:hover:scale-110">
+          <Wrap className="lg:hover:scale-110">
             <Image
               src={"/ktm.jpeg"}
               alt={"image.alt"}
