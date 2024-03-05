@@ -10,7 +10,7 @@ import { images } from "@/lib/images";
 export default function ImgSlider() {
   return (
     <section className="pt-6 z-10">
-      <div className="container">
+      <div className="container px-4 md:px-8">
         <Swiper
           loop={true}
           pagination={{ type: "fraction", clickable: false }}
