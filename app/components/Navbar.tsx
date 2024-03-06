@@ -82,6 +82,14 @@ export default function Navbar() {
           >
             About Us
           </Link>
+          <Link
+            className="text-lg font-bold dark bg-white p-2 px-10 rounded transition duration-200 hover:bg-primary"
+            href="https://drive.google.com/file/d/1obVom2Tpod0pTo-uIY3Skmresd90fG1C/view?usp=sharing"
+            target="”_blank”"
+            onClick={() => setShowNav(false)}
+          >
+            Catalogue
+          </Link>
         </nav>
       )}
 
@@ -104,6 +112,13 @@ export default function Navbar() {
         ))}
         <Link
           className="text-lg text-white font-bold dark bg-secondary p-2 rounded transition duration-200 hover:bg-primary"
+          href="https://drive.google.com/file/d/1obVom2Tpod0pTo-uIY3Skmresd90fG1C/view?usp=sharing"
+          target="”_blank”"
+        >
+          Catalogue
+        </Link>
+        <Link
+          className="text-xl font-bold"
           href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
           target="_blank"
         >
