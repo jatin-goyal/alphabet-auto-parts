@@ -25,7 +25,7 @@ async function getData() {
 export default async function Newest() {
   const data: simplifiedProduct[] = await getData();
   return (
-    <div className="bg-white">
+    <div className="mb-10">
       <div className="mx-auto max-w-2xl px-4 pt-2 sm:px-6  lg:max-w-7xl lg:px-8 mb-3 mt-4 pt-4">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
@@ -46,7 +46,7 @@ export default async function Newest() {
               return (
                 <div
                   key={product._id}
-                  className="group relative lg:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300"
+                  className="group relative lg:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300 bg-white p-2 rounded-xl shadow-xl"
                 >
                   <Link href={`/product/${product.slug}`}>
                     <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 lg:group-hover:opacity-75 lg:h-60 sm:h-40">

@@ -29,7 +29,7 @@ export default async function CategoryPage({
   const data: simplifiedProduct[] = await getData(params.category);
 
   return (
-    <div className="bg-white pt-8" style={{ minHeight: 530 }}>
+    <div className=" pt-8" style={{ minHeight: 530 }}>
       <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
           <h2 className="text-xl md:text-3xl font-bold tracking-tight text-gray-900">
@@ -42,7 +42,7 @@ export default async function CategoryPage({
           {data.map((product) => {
             return (
               <Link href={`/product/${product.slug}`} key={product._id}>
-                <div className="group relative lg:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300">
+                <div className="group relative lg:hover:scale-110  transition duration-150 ease-out hover:ease-in-out duration-300 rounded-xl shadow-xl p-2">
                   <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 lg:group-hover:opacity-75 h-40 lg:h-60">
                     <Image
                       src={product.imageURL}

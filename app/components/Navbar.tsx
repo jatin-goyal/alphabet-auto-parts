@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Cross, MenuIcon, ShoppingBag, X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -52,7 +52,7 @@ export default function Navbar() {
             <div key={idx} className="my-3" onClick={() => setShowNav(false)}>
               {pathname === link.href ? (
                 <Link
-                  className="text-2xl font-bold text-primary my-1 py-2"
+                  className="text-2xl font-bold text-amber-500 my-1 py-2"
                   href={link.href}
                 >
                   {link.name}
@@ -89,7 +89,10 @@ export default function Navbar() {
         {Links.map((link, idx) => (
           <div key={idx}>
             {pathname === link.href ? (
-              <Link className="text-xl font-bold text-primary" href={link.href}>
+              <Link
+                className="text-xl font-bold text-amber-500"
+                href={link.href}
+              >
                 {link.name}
               </Link>
             ) : (
