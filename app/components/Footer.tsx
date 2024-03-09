@@ -10,7 +10,8 @@ export default function Footer() {
           target="_blank"
         >
           <p className="pt-1">
-            Customer Care: <span className="text-primary">+91 7217683367</span>
+            Customer Care:{" "}
+            <span className="text-secondary font-bold">+91 7217683367</span>
           </p>
         </Link>
         <p className="py-1">E-mail: shopvisorglass@gmail.com</p>
