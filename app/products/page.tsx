@@ -14,7 +14,7 @@ export default async function CategoryPage({
   const promise = getMovies({ query: search });
 
   return (
-    <div className="bg-white pt-8">
+    <div className="bg-white pt-4">
       <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900 mt-2 mb-2">
