@@ -18,8 +18,7 @@ export default async function CategoryPage({
       <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-gray-900 mt-2 mb-2">
-            Search Best Quality{" "}
-            <span className="text-primary">Visor Glass</span>{" "}
+            Best Quality <span className="text-primary">Visor Glass</span>{" "}
           </h2>
         </div>
         <div className="grow">
