@@ -36,7 +36,7 @@ export default async function TopPicks() {
   const data: simplifiedProduct[] = await getData();
   return (
     <div className=" mb-4">
-      <div className="mx-auto max-w-2xl px-4 mt-2 pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4  pt-10 sm:px-6  lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Top Picks
