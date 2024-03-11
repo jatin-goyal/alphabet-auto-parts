@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { MenuIcon, X } from "lucide-react";
+import { MenuIcon, SearchIcon, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -47,12 +47,15 @@ export default function Navbar() {
         </div>
       </div>
       {showNav && (
-        <nav className="bg-black p-5 gap-1 flex flex-col lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center lg:hidden z-50">
+        <nav
+          className=" p-5  flex flex-col lg:flex ease-in transition duration-500 items-center absolute top-12 left-0 w-full justify-center items-center text-center lg:hidden z-50"
+          style={{ background: "#181D2A" }}
+        >
           {Links.map((link, idx) => (
             <div key={idx} className="my-3" onClick={() => setShowNav(false)}>
               {pathname === link.href ? (
                 <Link
-                  className="text-2xl font-bold text-amber-500 my-1 py-2"
+                  className="text-2xl font-bold text-amber-500 py-2"
                   href={link.href}
                 >
                   {link.name}
@@ -60,13 +63,20 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href}
-                  className="text-xl font-semibold text-white transition duration-100 hover:text-primary my-1 py-2"
+                  className="text-xl font-semibold text-white transition duration-100 hover:text-primary py-2"
                 >
                   {link.name}
                 </Link>
               )}
             </div>
           ))}
+          <Link
+            className="text-2xl font-bold text-white transition duration-100 hover:text-primary my-1 pt-5 pb-2 flex gap-3 items-center border-t w-full justify-center"
+            href={"/products"}
+            onClick={() => setShowNav(false)}
+          >
+            Search by name <SearchIcon className="w-5" />
+          </Link>
           <Link
             className="text-2xl font-bold text-white transition duration-100 hover:text-primary my-1 py-2"
             href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
@@ -85,7 +95,7 @@ export default function Navbar() {
         </nav>
       )}
 
-      <nav className="hidden gap-10 lg:flex 2xl:ml-16 mb-3 items-center">
+      <nav className="hidden gap-8 lg:flex 2xl:ml-16 mb-3 items-center mt-3">
         {Links.map((link, idx) => (
           <div key={idx}>
             {pathname === link.href ? (
@@ -105,16 +115,24 @@ export default function Navbar() {
             )}
           </div>
         ))}
-        <Link
-          className="text-xl font-bold"
-          href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
-          target="_blank"
-        >
-          Contact Us
-        </Link>
-        <Link className="text-xl font-bold " href={"/aboutUs"}>
-          About Us
-        </Link>
+        <div className="flex gap-5 border-l pl-7">
+          <Link
+            className="text-lg font-semibold flex gap-1 items-center"
+            href={"/products"}
+          >
+            Search <SearchIcon className="w-5" />
+          </Link>
+          <Link
+            className="text-lg font-semibold"
+            href="https://forms.visme.co/formsPlayer/vdnoqj43-contact-form"
+            target="_blank"
+          >
+            Contact Us
+          </Link>
+          <Link className="text-lg font-semibold " href={"/aboutUs"}>
+            About Us
+          </Link>
+        </div>
       </nav>
     </header>
   );
